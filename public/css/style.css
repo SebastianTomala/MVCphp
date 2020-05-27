@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #181818;
+  text-decoration: none;
+  opacity: 1;
+}
+a:hover {
+  text-decoration: underline;
+  color: #181818;
+  opacity: 0.8;
+}
+body {
+  background-color: #ffffff;
+}
+body nav.navbar {
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  body nav.navbar {
+    display: block;
+    text-align: center;
+  }
+}
+body nav.navbar .navbar-brand {
+  display: block;
+  flex: 1;
+}
+@media (max-width: 767px) {
+  body nav.navbar .navbar-brand {
+    padding: 10px 0;
+  }
+}
+body nav.navbar .navbar-collapse {
+  position: relative;
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  body nav.navbar .navbar-collapse {
+    display: block;
+    padding: 10px 0;
+    padding-bottom: 35px;
+  }
+}
+body nav.navbar .navbar-collapse input.hamburger-checkbox {
+  display: none;
+}
+@media (max-width: 767px) {
+  body nav.navbar .navbar-collapse input.hamburger-checkbox {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 32px;
+    height: 22px;
+    transform: translate(-16px, 10px);
+    opacity: 0;
+    z-index: 2;
+  }
+}
+body nav.navbar .navbar-collapse input.hamburger-checkbox ~ .hamburger-menu {
+  display: none;
+  width: 32px;
+  height: 22px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  body nav.navbar .navbar-collapse input.hamburger-checkbox ~ .hamburger-menu {
+    position: relative;
+    display: block;
+  }
+}
+body nav.navbar .navbar-collapse input.hamburger-checkbox ~ .hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #000000;
+  margin: 0 0 5px 0;
+}
+body nav.navbar .navbar-collapse input.hamburger-checkbox ~ .hamburger-menu span:last-of-type {
+  margin: 0;
+}
+body nav.navbar .navbar-collapse input.hamburger-checkbox:checked ~ .hamburger-menu .hamburger-part:nth-child(1), body nav.navbar .navbar-collapse input.hamburger-checkbox:checked ~ .hamburger-menu .hamburger-part:nth-child(3) {
+  position: absolute;
+  top: 10px;
+}
+body nav.navbar .navbar-collapse input.hamburger-checkbox:checked ~ .hamburger-menu .hamburger-part:nth-child(1) {
+  left: 0;
+  transform: rotate(45deg);
+}
+body nav.navbar .navbar-collapse input.hamburger-checkbox:checked ~ .hamburger-menu .hamburger-part:nth-child(2) {
+  display: none;
+}
+body nav.navbar .navbar-collapse input.hamburger-checkbox:checked ~ .hamburger-menu .hamburger-part:nth-child(3) {
+  right: 0;
+  transform: rotate(-45deg);
+}
+body nav.navbar .navbar-collapse input.hamburger-checkbox:checked ~ ul {
+  display: flex;
+}
+@media (max-width: 767px) {
+  body nav.navbar .navbar-collapse input.hamburger-checkbox:checked ~ ul {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  body nav.navbar .navbar-collapse input.hamburger-checkbox:checked ~ ul.categories {
+    margin-top: 20px;
+    transition: margin-top linear 0.4s;
+  }
+}
+@media (max-width: 767px) {
+  body nav.navbar .navbar-collapse input.hamburger-checkbox:checked ~ ul.login {
+    margin-bottom: 0;
+  }
+}
+body nav.navbar .navbar-collapse input.hamburger-checkbox:hover {
+  cursor: pointer;
+}
+body nav.navbar .navbar-collapse .navbar-nav {
+  display: flex;
+  list-style-type: none;
+}
+@media (max-width: 767px) {
+  body nav.navbar .navbar-collapse .navbar-nav.categories {
+    margin-top: -175px;
+    transition: margin-top linear 0.4s;
+  }
+}
+@media (max-width: 767px) {
+  body nav.navbar .navbar-collapse .navbar-nav {
+    display: block;
+    margin: 10px 0;
+  }
+}
+body nav.navbar .navbar-collapse .navbar-nav .nav-item {
+  position: relative;
+  text-align: left;
+  padding: 0 10px;
+}
+body nav.navbar .navbar-collapse .navbar-nav .nav-item:not(:last-of-type)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #d3d3d3;
+}
+@media (max-width: 767px) {
+  body nav.navbar .navbar-collapse .navbar-nav .nav-item:not(:last-of-type)::after {
+    content: none;
+  }
+}
+body .container {
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media (max-width: 1279px) {
+  body .container {
+    max-width: 899px;
+  }
+}
+@media (max-width: 899px) {
+  body .container {
+    max-width: 767px;
+  }
+}
+body footer#footer {
+  background-color: #f9f9f9;
+  padding: 10px;
+}
