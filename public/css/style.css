@@ -175,6 +175,20 @@ body .container {
     max-width: 767px;
   }
 }
+body .container .form .form-group {
+  margin: 10px 0;
+}
+body .container .form .form-group .form-input {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 5px;
+}
+body .container .form .form-group .form-input.is-invalid {
+  border-color: #df5151;
+}
+body .container .form .form-group .err-info {
+  display: block;
+}
 body footer#footer {
   background-color: #f9f9f9;
   padding: 10px;

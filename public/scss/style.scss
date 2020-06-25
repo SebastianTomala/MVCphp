@@ -10,6 +10,17 @@ $hamburger-color: #000000;
 $padding-top-bottom-small: 10px 0;
 $padding-top-bottom-medium: 20px 0;
 $padding-top-bottom-larg: 30px 0;
+$padding-small: 10px;
+$padding-medium: 10px;
+$padding-large: 10px;
+$padding-input: 5px;
+
+$margin-top-bottom-small: 10px 0;
+$margin-top-bottom-medium: 20px 0;
+$margin-top-bottom-larg: 30px 0;
+$margin-small: 10px;
+$margin-medium: 10px;
+$margin-large: 10px;
 
 $mobile-resolution: 767px;
 $resolution-900: 899px;
@@ -174,6 +185,25 @@ body {
         }
         @media(max-width: $resolution-900) {
             max-width: $mobile-resolution;
+        }
+        .form {
+            .form-group {
+                margin: $margin-top-bottom-small;
+                label {
+
+                }
+                .form-input {
+                    border: 1px solid #d3d3d3;
+                    border-radius: 5px;
+                    padding: $padding-input;
+                    &.is-invalid {
+                        border-color: #df5151;
+                    }
+                }
+                .err-info {
+                    display: block;
+                }
+            }
         }
     }
     footer#footer {
