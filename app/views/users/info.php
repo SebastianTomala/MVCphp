@@ -1,6 +1,6 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
-    <div class="row mb-5">
-        <div class="col-md-6 mx-auto">
+    <div class="">
+        <div class="">
            <?php var_dump($data); ?>
         </div>
     </div>

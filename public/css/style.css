@@ -32,12 +32,12 @@ a:hover {
   background-color: #c7c8ca;
   transition: all 0.4s ease;
 }
-input[type=text], input[type=email], input[type=password] {
+input[type=text], input[type=email], input[type=password], textarea {
   padding: 5px;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
 }
-input[type=text].is-invalid, input[type=email].is-invalid, input[type=password].is-invalid {
+input[type=text].is-invalid, input[type=email].is-invalid, input[type=password].is-invalid, textarea.is-invalid {
   border-color: #df5151;
 }
 body {

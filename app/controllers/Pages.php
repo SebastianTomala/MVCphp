@@ -23,4 +23,11 @@ class Pages extends Controller {
         ];
         $this->view('pages/about', $data);
     }
+    public function contact() {
+        $data = [
+            'title' => 'Contact',
+            'description' => 'Contact form'
+        ];
+        $this->view('pages/contact', $data);
+    }
 }
