@@ -15,6 +15,9 @@
           <li class="nav-item">
             <a class="nav-link" href="<?php echo URLROOT; ?>/pages/about">About</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo URLROOT; ?>/pages/contact">Contact</a>
+          </li>
         </ul>
 
         <ul class="navbar-nav login">
@@ -23,7 +26,7 @@
               <a class="nav-link" href="<?php echo URLROOT ?>/users/logout">Logout</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Welcom <?php echo $_SESSION['user_name']; ?></a>
+              <a class="nav-link" href="<?php echo URLROOT ?>/users/info/<?php echo $_SESSION['user_id']; ?>">Welcom <?php echo $_SESSION['user_name']; ?></a>
             </li>
           <?php else: ?>
             <li class="nav-item">

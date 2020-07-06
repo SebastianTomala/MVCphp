@@ -151,7 +151,8 @@ class Users extends Controller {
     public function info($id) {
         $user = $this->userModel->getUserById($id);
         $data = [
-            'user' => $user
+            'user_name' => $user->name,
+            'user_email' => $user->email
         ];
         $this->view('users/info', $data);
     }
