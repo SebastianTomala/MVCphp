@@ -3,7 +3,6 @@
         <?php require APPROOT . '/views/inc/user/navigation.php'; ?>
         <section class="user-content">
             <header class="user-name">
-                <div><?php echo $data['user_name']; ?></div>
             </header>
         </section>
     </div>

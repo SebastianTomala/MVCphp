@@ -156,6 +156,14 @@ class Users extends Controller {
         ];
         $this->view('users/info', $data);
     }
+    public function gallery($id) {
+        $user = $this->userModel->getUserById($id);
+        $data = [
+            'user_name' => $user->name,
+            'user_email' => $user->email
+        ];
+        $this->view('users/gallery', $data);
+    }
     public function createUserSession($user) {
         $_SESSION['user_id'] = $user->id;
         $_SESSION['user_email'] = $user->email;
