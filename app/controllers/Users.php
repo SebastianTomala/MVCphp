@@ -152,15 +152,17 @@ class Users extends Controller {
         $user = $this->userModel->getUserById($id);
         $data = [
             'user_name' => $user->name,
-            'user_email' => $user->email
+            'user_email' => $user->email,
+            'user_id'       => $user->id
         ];
         $this->view('users/info', $data);
     }
     public function gallery($id) {
         $user = $this->userModel->getUserById($id);
         $data = [
-            'user_name' => $user->name,
-            'user_email' => $user->email
+            'user_name'     => $user->name,
+            'user_email'    => $user->email,
+            'user_id'       => $user->id
         ];
         $this->view('users/gallery', $data);
     }

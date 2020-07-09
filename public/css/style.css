@@ -39,6 +39,24 @@ ul {
   background-color: #c7c8ca;
   transition: all 0.4s ease;
 }
+.btn.btn-edit {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  font-size: 13px;
+  color: #000;
+  background: #e0e0e0;
+  padding: 4px 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  text-transform: lowercase;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn.btn-edit:hover {
+  background-color: #c7c8ca;
+  transition: all 0.4s ease;
+}
 input[type=text], input[type=email], input[type=password], textarea {
   padding: 5px;
   border: 1px solid #e0e0e0;
@@ -217,8 +235,17 @@ body .container section.title h2 {
   text-transform: uppercase;
 }
 body .container section.content .mouse-follower {
+  position: relative;
   height: 100px;
   background-color: red;
+}
+body .container section.content .mouse-follower #eye1 {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  background-color: green;
 }
 body .container section.have-account {
   margin: 10px 0;
@@ -260,6 +287,16 @@ body .container .user-container .user-navigation .user-action .item.active {
 body .container .user-container .user-content {
   flex: 5;
   padding: 10px;
+}
+body .container .user-container .user-content .user-data .data .item {
+  margin: 5px 0;
+}
+body .container .user-container .user-content .user-data .data .item:not(:last-of-type) {
+  margin-bottom: 0;
+}
+body .container .user-container .user-content .user-data .data .item .title {
+  color: #333333;
+  font-weight: 700;
 }
 body footer#footer {
   display: flex;

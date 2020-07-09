@@ -66,6 +66,24 @@ ul {
         transition: all 0.4s ease;
     }
 }
+.btn.btn-edit {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-size: 13px;
+    color: $primary-font-color;
+    background: $bg-color;
+    padding: 4px 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    text-transform: lowercase;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+        background-color: #c7c8ca;
+        transition: all 0.4s ease;
+    }
+}
 input[type=text],
 input[type=email],
 input[type=password],
@@ -232,8 +250,18 @@ body {
         }
         section.content {
             .mouse-follower {
+                position: relative;
                 height: 100px;
                 background-color: red;
+                #eye1 {
+                // #eye2 {
+                    position: absolute;
+                    left: 50px;
+                    bottom: 0;
+                    width: 5px;
+                    height: 5px;
+                    background-color: green;
+                }
             }
         }
         section.have-account {
@@ -279,6 +307,23 @@ body {
             .user-content {
                 flex: 5;
                 padding: $padding-small;
+                .user-name {
+
+                }
+                .user-data {
+                    .data {
+                        .item {
+                            margin: 5px 0;
+                            &:not(:last-of-type) {
+                                margin-bottom: 0;
+                            }
+                            .title {
+                                color: #333333;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
