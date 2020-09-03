@@ -23,7 +23,7 @@
             <span class="err-info"></span>
         </div>
         <div class="form-group">
-            <label for="message_contetn">Confirm password: <sup>*</sup></label>
+            <label for="message_contetn">Message content: <sup>*</sup></label>
             <textarea type="password" name="message_contetn" cols="30" rows="10" class="form-input" value = "" placeholder="Your message"></textarea>
             <span class="err-info"></span>
         </div>
