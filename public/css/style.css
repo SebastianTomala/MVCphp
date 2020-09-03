@@ -236,16 +236,29 @@ body .container section.title h2 {
 }
 body .container section.content .mouse-follower {
   position: relative;
-  height: 100px;
+  height: 400px;
   background-color: red;
 }
-body .container section.content .mouse-follower #eye1 {
+body .container section.content .mouse-follower #eye-wrapper1, body .container section.content .mouse-follower #eye-wrapper2 {
   position: absolute;
-  left: 50px;
+  left: 190px;
+  top: 185px;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+body .container section.content .mouse-follower #eye-wrapper2 {
+  left: 140px;
+}
+body .container section.content .mouse-follower #eye1, body .container section.content .mouse-follower #eye2 {
+  position: absolute;
+  left: 0;
   bottom: 0;
-  width: 5px;
-  height: 5px;
-  background-color: green;
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  border-radius: 6px;
 }
 body .container section.have-account {
   margin: 10px 0;
