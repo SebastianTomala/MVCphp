@@ -11,16 +11,16 @@ function mouseFollower(e) {
     var x2 = e.clientX - containerCoorX - 150;
     var y2 = -(e.clientY - containerCoorY - containerHeight + 200);
     var c2 = Math.sqrt(x2 * x2 + y2 * y2);
-
+    
     var eyeRadius = 10;
     
     var eyeX = (eyeRadius*x1)/(c1);
     var eyeY = Math.sqrt(eyeRadius * eyeRadius - eyeX * eyeX);
-    eyeY = y1 >= 0 ? eyeY : -(eyeY);
+    eyeY = (y1 >= 0) ? eyeY : -(eyeY);
 
     var eye1X = (eyeRadius*x2)/(c2);
-    var eye1Y = Math.sqrt(eyeRadius * eyeRadius - eyeX * eyeX);
-    eye1Y = y2 >= 0 ? eye1Y : -(eye1Y);
+    var eye1Y = Math.sqrt(eyeRadius * eyeRadius - eye1X * eye1X);
+    eye1Y = (y2 >= 0) ? eye1Y : -(eye1Y);
 
     document.getElementById("eye1").style.bottom = eyeY + 200 + "px";
     document.getElementById("eye1").style.left   = eyeX + 200 + "px";

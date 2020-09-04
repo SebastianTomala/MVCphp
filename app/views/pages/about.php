@@ -9,8 +9,8 @@
     <div class="mouse-follower" id="mouse-follower" onmousemove="mouseFollower(event)">
         <div id="eye-wrapper1"></div>
         <div id="eye-wrapper2"></div>
-        <div id="eye2"></div>
         <div id="eye1"></div>
+        <div id="eye2"></div>
     </div>
 </section>
 <?php require APPROOT . '/views/inc/footer.php'; ?>
