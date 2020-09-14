@@ -7,6 +7,8 @@
 </section>
 <section class="content">
     <div class="mouse-follower" id="mouse-follower" onmousemove="mouseFollower(event)">
+        <div class="head"></div>
+        <div class="face"></div>
         <div id="eye-wrapper1"></div>
         <div id="eye-wrapper2"></div>
         <div id="eye1"></div>

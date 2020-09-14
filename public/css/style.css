@@ -237,14 +237,33 @@ body .container section.title h2 {
 body .container section.content .mouse-follower {
   position: relative;
   height: 400px;
+  background-color: #e0e0e0;
+}
+body .container section.content .mouse-follower .head {
+  position: absolute;
+  top: 160px;
+  left: 128px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 55px;
+}
+body .container section.content .mouse-follower .face {
+  position: absolute;
+  top: 223px;
+  left: 152px;
+  width: 50px;
+  height: 16px;
   background-color: red;
+  border-radius: 10px;
 }
 body .container section.content .mouse-follower #eye-wrapper1, body .container section.content .mouse-follower #eye-wrapper2 {
   position: absolute;
   left: 190px;
-  top: 185px;
-  width: 25px;
-  height: 25px;
+  top: 183px;
+  width: 27px;
+  height: 27px;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -255,10 +274,10 @@ body .container section.content .mouse-follower #eye1, body .container section.c
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   background-color: #000000;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 body .container section.have-account {
   margin: 10px 0;
