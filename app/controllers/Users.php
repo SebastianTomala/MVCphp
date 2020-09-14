@@ -3,10 +3,12 @@
 class Users extends Controller {
     public function __construct() {
         $this->userModel = $this->model('User');
-
     }
     public function index() {
-
+        if(!isLoggedIn()) {
+            redirect('users/login');
+        }
+        $this->info($_SESSION['user_id']);
     }
     public function register() {
         // Check for post
