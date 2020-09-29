@@ -279,6 +279,14 @@ body .container section.content .mouse-follower #eye1, body .container section.c
   background-color: #000000;
   border-radius: 8px;
 }
+body .container section.content .mouse-follower #eye1 {
+  left: 200px;
+  bottom: 200px;
+}
+body .container section.content .mouse-follower #eye2 {
+  left: 150px;
+  bottom: 200px;
+}
 body .container section.have-account {
   margin: 10px 0;
   text-align: center;
