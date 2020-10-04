@@ -1,6 +1,6 @@
 function mouseFollower(e) {
     var containerElement = document.getElementById("mouse-follower");
-    var containerCoorY   = containerElement.offsetTop;
+    var containerCoorY   = containerElement.offsetTop - window.scrollY;
     var containerCoorX   = containerElement.offsetLeft;
     var containerHeight  = containerElement.offsetHeight;
     
