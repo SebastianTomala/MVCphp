@@ -58,4 +58,9 @@ class User {
 
         return $row;
     }
+    // Get user id 
+    public function getUserId() {
+        
+        return $userId;
+    }
 }

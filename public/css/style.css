@@ -363,6 +363,37 @@ body .container .user-container .user-content .user-data .data .item .title {
   color: #333333;
   font-weight: 700;
 }
+body .container .no-user-container .no-user-info {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #181818;
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+body .container .posts-title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+body .container .posts-title-wrapper .title {
+  position: relative;
+  padding: 0 0 10px 0;
+}
+body .container .posts-title-wrapper .title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #181818;
+}
+body .container .card-body {
+  margin-bottom: 15px;
+}
 body footer#footer {
   display: flex;
   background-color: #e0e0e0;

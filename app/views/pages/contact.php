@@ -1,3 +1,13 @@
+<?php
+$defaultValues = array();
+if($_SESSION["user_id"]) {
+    $defaultValues["user_name"]  = $_SESSION["user_name"];
+    $defaultValues["user_email"] = $_SESSION["user_email"];
+}else {
+    $defaultValues["user_name"]  = "";
+    $defaultValues["user_email"] = "";
+}
+?>
 <?php require APPROOT . '/views/inc/header.php'; ?>
 <section class="title">
     <header class="wrapper">
@@ -9,12 +19,12 @@
     <form action="<?php echo URLROOT; ?>/contact/submit" method="post">
         <div class="form-group">
             <label for="name">Name: <sup>*</sup></label>
-            <input type="text" name="name" class="form-input" value = "" placeholder="Jan">
+            <input type="text" name="name" class="form-input" value = "<?php echo $defaultValues["user_name"]; ?>" placeholder="Jan">
             <span class="err-info"></span>
         </div>
         <div class="form-group">
             <label for="email">E-mail: <sup>*</sup></label>
-            <input type="email" name="email" class="form-input" value = "" placeholder="example@example.com">
+            <input type="email" name="email" class="form-input" value = "<?php echo $defaultValues["user_email"]; ?>" placeholder="example@example.com">
             <span class="err-info"></span>
         </div>
         <div class="form-group">
