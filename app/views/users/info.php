@@ -21,7 +21,7 @@
     <?php else: ?>
         <div class="no-user-container">
             <div class="no-user-info">
-                No such user exists or his account has been deleted 
+            No such user exists or his account has been deleted 
             </div>
             <button class="btn btn-primary go-back-btn"><a href="<?php echo URLROOT; ?>">Back</a></button>
         </div>
