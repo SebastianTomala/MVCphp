@@ -15,11 +15,13 @@
     <p><?php echo $data['post']->body; ?></p>
 
     <?php if($data['post']->user_id == $_SESSION['user_id']): ?>
-    <a href="<?php echo URLROOT; ?>/posts/edit/<?php echo $data['post']->id; ?>" class="btn btn-dark">
-        Edit
-    </a>
-    <form action="<?php echo URLROOT; ?>/posts/delete/<?php echo $data['post']->id; ?>" method="post">
-        <input type="submit" value="Delete" class="btn btn-danger pull-right">
-    </form>
+    <div class="action-toolbar">
+        <a href="<?php echo URLROOT; ?>/posts/edit/<?php echo $data['post']->id; ?>" class="btn btn-dark">
+            Edit
+        </a>
+        <form action="<?php echo URLROOT; ?>/posts/delete/<?php echo $data['post']->id; ?>" method="post">
+            <input type="submit" value="Delete" class="action post-delete">
+        </form>
+    </div>
     <?php endif; ?>
 <?php require APPROOT . '/views/inc/footer.php'; ?>

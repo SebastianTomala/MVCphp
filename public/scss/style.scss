@@ -49,16 +49,29 @@ a {
 ul {
     list-style-type: none;
 }
-.btn.btn-primary {
+.btn.btn-primary,
+.btn.btn-secondary {
     display: block;
     margin: auto;
     color: $primary-font-color;
     background: $bg-color;
     padding: 10px 20px;
     border: 1px solid #000;
-    border-radius: 0px;
+    border-radius: 5px;
     text-transform: uppercase;
     opacity: 1;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+        background-color: #c7c8ca;
+        transition: all 0.4s ease;
+    }
+}
+.btn.btn-secondary {
+    padding: 5px 10px;
+    text-transform: none;
+    opacity: 1;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
     &:hover {
@@ -334,6 +347,23 @@ body {
         section.have-account {
             margin: $margin-top-bottom-small;
             text-align: center;
+        }
+        .action-toolbar {
+            display: flex;
+            .post-delete {
+                margin-left: 10px;
+                color: #181818;
+                text-decoration: none;
+                border: none;
+                opacity: 0.7;
+                &:hover {
+                    cursor: pointer;
+                    background-color: transparent;
+                    color: #181818;
+                    text-decoration: underline;
+                    opacity: 1;
+                }
+            }
         }
         .form {
             margin: 0 auto;
